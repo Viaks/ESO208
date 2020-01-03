@@ -3,9 +3,9 @@ str = input(prompt,'s');
 % When the f(x) is not a polynomial
 if str=='N'
     prompt='Type 1 for Bisection method\nType 2 for False-position method\nType 3 for Fixed-point method\nType 4 for Newton-raphson\nType 5 for Secant method\n';
-    choice = input(prompt);
+    method = input(prompt);
     
-    if choice==1
+    if method==1
         
         % Function scanning
         x=sym('x');
@@ -89,7 +89,7 @@ if str=='N'
         
     end
     
-    if choice==2
+    if method==2
         
         % Function scanning
         x=sym('x');
@@ -174,7 +174,7 @@ if str=='N'
     end
     
     
-    if choice==3
+    if method==3
         
         % Function scanning
         x=sym('x');
@@ -252,7 +252,7 @@ if str=='N'
         
     end
     
-    if choice==4
+    if method==4
         
         % Function scanning
         x=sym('x');
@@ -334,7 +334,7 @@ if str=='N'
         
     end
     
-    if choice==5
+    if method==5
         
         % Function scanning
         x=sym('x');
